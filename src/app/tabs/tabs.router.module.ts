@@ -1,3 +1,4 @@
+import { HomePageModule } from './../home/home.module';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
@@ -10,12 +11,13 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'categories',
+        path: 'home',
         children: [
           {
             path: '',
-            loadChildren: () => import('../categories/categories.module').then(m => m.CategoriesPageModule)
+            loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
           },
+         
           {
             path: 'fashion',
             loadChildren: () => import('../fashion/listing/fashion-listing.module').then(m => m.FashionListingPageModule)
@@ -72,6 +74,11 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'contacts',
+        loadChildren: () => import('../contacts/contacts.module').then(m => m.ContactsPageModule)
+      },
+      
+      {
         path: 'notifications',
         children: [
           {
@@ -85,7 +92,7 @@ const routes: Routes = [
   // /app/ redirect
   {
     path: '',
-    redirectTo: 'app/categories',
+    redirectTo: 'app/home',
     pathMatch: 'full'
   }
 ];

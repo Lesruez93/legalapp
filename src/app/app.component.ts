@@ -16,7 +16,12 @@ export class AppComponent {
   appPages = [
     {
       title: 'Categories',
-      url: '/app/categories',
+      url: '/app/home',
+      icon: './assets/sample-icons/side-menu/categories.svg'
+    },
+    {
+      title: 'Contatcs',
+      url: '/app/contacts',
       icon: './assets/sample-icons/side-menu/categories.svg'
     },
     {

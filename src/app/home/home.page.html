@@ -1,0 +1,103 @@
+<ion-header class="ion-no-border">
+	<ion-toolbar>
+		<!-- <ion-buttons slot="start">
+			<ion-button>
+				<ion-icon name="apps"></ion-icon>
+			</ion-button>
+		</ion-buttons> -->
+    <ion-item lines="none">
+			<ion-label>
+				<h2>Welcome, Aaron Katema</h2>
+			</ion-label>
+    </ion-item>
+
+		<ion-buttons slot="end">
+			<ion-button class="bordered" fill="solid" color="light">
+				<ion-icon color="custom" name="notifications"></ion-icon>
+			</ion-button>
+		</ion-buttons>
+	</ion-toolbar>
+
+	
+
+</ion-header>
+
+<ion-content>
+
+  <div class="slides ion-no-margin-bottom">
+    <app-image-shell [mode]="'cover'" class="category-cover"
+     animation="spinner" [src]="'./assets/images/LegalCoverCard.png'" style="border-radius: 50px !important;">
+      <app-aspect-ratio [ratio]="{w:1, h:1}">
+        <div style="margin-top:50px !important; margin-left: 10px;">
+          <h2 class="category-title">Aaron Katema</h2>
+          <p class="category-title">1243848488</p>
+        </div>
+         
+        
+      </app-aspect-ratio>
+    </app-image-shell>
+   
+    
+    <!-- <ion-slides [options]="slidesOptions">
+      <ion-slide>
+        <ion-card>
+          <ion-card-header>
+            <div class="main">
+              <img src="https://cfl.dropboxstatic.com/static/images/logo_catalog/twitter-card-glyph_m1%402x.png">
+            </div>
+            <img class="files" src="https://i.ibb.co/jD8ypLq/files.jpg">
+          </ion-card-header>
+          <ion-card-content class="ion-text-left">
+            <ion-card-title class="ion-margin-bottom">Dropbox</ion-card-title>
+            <ion-card-subtitle class="ion-text-right">10/50GB</ion-card-subtitle>
+            <ion-progress-bar value="0.5" color="custom"></ion-progress-bar>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+    </ion-slides> -->
+  </div>
+
+  <div class="container">
+      <ion-grid>
+        <h3>Services</h3>
+
+        <ion-row class="ion-align-items-center">
+         
+          <ion-col size="6" class="">
+            <ion-card>
+              <ion-card-header>
+                <ion-label>
+                  <h4>Legal Cover</h4>
+                  
+                </ion-label> 
+              </ion-card-header>
+              <ion-card-content>
+                
+              </ion-card-content>
+            </ion-card>
+
+        
+          </ion-col>
+          
+        
+         
+          <ion-col size="6">
+            <ion-card>
+              <ion-card-header>
+                <ion-label>
+                  <h4>Legal Cover</h4>
+                  
+                </ion-label> 
+              </ion-card-header>
+              <ion-card-content>
+                
+              </ion-card-content>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+
+  </div>
+
+</ion-content>

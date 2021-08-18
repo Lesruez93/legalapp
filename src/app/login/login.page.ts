@@ -46,7 +46,7 @@ export class LoginPage implements OnInit {
 
   doLogin(): void {
     console.log('do Log In');
-    this.router.navigate(['app/categories']);
+    this.router.navigate(['app/home']);
   }
 
   goToForgotPassword(): void {
@@ -55,16 +55,16 @@ export class LoginPage implements OnInit {
 
   doFacebookLogin(): void {
     console.log('facebook login');
-    this.router.navigate(['app/categories']);
+    this.router.navigate(['app/home']);
   }
 
   doGoogleLogin(): void {
     console.log('google login');
-    this.router.navigate(['app/categories']);
+    this.router.navigate(['app/home']);
   }
 
   doTwitterLogin(): void {
     console.log('twitter login');
-    this.router.navigate(['app/categories']);
+    this.router.navigate(['app/home']);
   }
 }

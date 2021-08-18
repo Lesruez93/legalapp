@@ -18,7 +18,16 @@ const routes: Routes = [
   { path: 'showcase', loadChildren: () => import('./showcase/showcase.module').then(m => m.ShowcasePageModule) },
   { path: 'firebase', loadChildren: () => import('./firebase/firebase-integration.module').then(m => m.FirebaseIntegrationModule) },
   { path: 'maps', loadChildren: () => import('./maps/maps.module').then(m => m.MapsPageModule) },
-  { path: '**', redirectTo: 'page-not-found' }
+  { path: '**', redirectTo: 'page-not-found' },
+  // {
+  //   path: 'home',
+  //   loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  // },
+  // {
+  //   path: 'contacts',
+  //   loadChildren: () => import('./contacts/contacts.module').then( m => m.ContactsPageModule)
+  // }
+
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
