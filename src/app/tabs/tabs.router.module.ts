@@ -77,6 +77,11 @@ const routes: Routes = [
         path: 'contacts',
         loadChildren: () => import('../contacts/contacts.module').then(m => m.ContactsPageModule)
       },
+
+      {
+        path: 'register',
+        loadChildren: () => import('../register/register.module').then(m => m.RegisterPageModule)
+      },
       
       {
         path: 'notifications',
