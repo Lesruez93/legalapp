@@ -146,6 +146,9 @@ export class RegisterPage implements OnInit {
   onSubmit(values) {
     console.log(values);
   }
+  next(index) {
+    this.slides.slideTo(index)
+}
 
   ngAfterViewInit(): void {
     // ViewChild is set

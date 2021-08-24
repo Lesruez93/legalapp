@@ -1,4 +1,10 @@
 :host{
+  ion-content{
+    --background: #F1F5F8
+  }
+  .user-image{
+    border-radius: 14px;
+  }
     .user-friends-section {
         margin: calc(var(--page-margin) * 2) var(--page-margin) var(--page-margin);
         padding-bottom: var(--page-margin);

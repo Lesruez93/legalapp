@@ -49,6 +49,11 @@ export class LoginPage implements OnInit {
     this.router.navigate(['app/home']);
   }
 
+  doOtp(): void {
+    console.log('do Log In');
+    this.router.navigate(['otp']);
+  }
+
   goToForgotPassword(): void {
     console.log('redirect to forgot-password page');
   }

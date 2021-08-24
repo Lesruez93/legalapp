@@ -4,7 +4,7 @@
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
-  --ion-color-primary: #1C1C1C;
+  --ion-color-primary: #ED1C24;
   --ion-color-primary-rgb: 28,28,28;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255,255,255;
@@ -12,7 +12,7 @@
   --ion-color-primary-tint: #333333;
 
   /** secondary **/
-  --ion-color-secondary: #FF0062;
+  --ion-color-secondary: #000;
   --ion-color-secondary-rgb: 255,0,98;
   --ion-color-secondary-contrast: #ffffff;
   --ion-color-secondary-contrast-rgb: 255,255,255;
@@ -92,7 +92,7 @@
 
 :root {
   /* Set the font family of the entire app */
-  --ion-font-family: 'Rubik', sans-serif;
+  --ion-font-family: 'Proxima-Nova','Rubik', sans-serif;
 
   --app-background: #FFFFFF;
   --app-background-shade: var(--ion-background-color-step-50, #F2F2F2);
