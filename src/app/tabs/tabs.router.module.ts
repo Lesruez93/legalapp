@@ -92,6 +92,22 @@ const routes: Routes = [
           }
         ]
       },
+      {
+        path: 'personal-details',
+        loadChildren: () => import('../personal-details/personal-details.module').then( m => m.PersonalDetailsPageModule)
+      },
+      {
+        path: 'address-details',
+        loadChildren: () => import('../address-details/address-details.module').then( m => m.AddressDetailsPageModule)
+      },
+      {
+        path: 'payment-details',
+        loadChildren: () => import('../payment-details/payment-details.module').then( m => m.PaymentDetailsPageModule)
+      },
+      {
+        path: 'benefits-details',
+        loadChildren: () => import('../benefits-details/benefits-details.module').then( m => m.BenefitsDetailsPageModule)
+      },
     ]
   },
   // /app/ redirect

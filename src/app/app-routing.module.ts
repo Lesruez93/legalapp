@@ -29,10 +29,12 @@ const routes: Routes = [
 
  
   { path: '**', redirectTo: 'page-not-found' },
-  {
-    path: 'register',
-    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
-  },
+  // {
+  //   path: 'register',
+  //   loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
+  // },
+
+
   
 
  
