@@ -26,7 +26,7 @@
 
   <div class="slides ion-no-margin-bottom">
     <app-image-shell [mode]="'cover'" class="category-cover"
-     animation="spinner" [src]="'./assets/images/LegalCoverCard.png'" style="border-radius: 50px !important; height: 100%;">
+     animation="spinner" [src]="'./assets/images/LegalCoverCard.png'" style="border-radius: 50px !important; height: 100%; ">
       <app-aspect-ratio [ratio]="{w:1, h:1}">
         <div style="margin-top:50px !important; margin-left: 10px;" class="ion-text-center">
           <h2 class="category-title">Aaron Katema</h2>
@@ -40,14 +40,14 @@
   
   </div>
 
-  <div class="container ion-no-margin" >
+  <div class="container ion-no-margin ion-no-padding" >
       <ion-grid>
-        <ion-row>
-          <ion-col>
-            <ion-card>
+        <ion-row class="ion-no-margin ion-no-padding">
+          <ion-col >
+            <ion-card class="ion-no-margin ion-no-padding">
               <ion-card-header>
                 <ion-label>
-            <p>Legal Problems?</p>
+            <p class="black">Legal Problems?</p>
                 
 
               <small>Find Suitable Help here</small>
@@ -63,30 +63,24 @@
         <ion-row class=" ion-no-margin ion-no-padding">
          
           <ion-col size="6" class="">
-            <ion-card>
+            <ion-card class="title ion-no-margin ion-no-padding">
               <ion-card-header>
-                <ion-label>
-                  <ion-icon name="alarm-outline"></ion-icon>
+                <ion-label class="ion-text-center">
+                  <ion-icon name="alarm-outline" color="secondary"></ion-icon>
                   <h4 class="welcome">24 Hr Legal Advice</h4>
-                  
                 </ion-label> 
               </ion-card-header>
               <ion-card-content>
-                
               </ion-card-content>
             </ion-card>
-
-        
           </ion-col>
-          
         
-         
           <ion-col size="6">
-            <ion-card>
+            <ion-card class="ion-no-margin ion-no-padding">
               <ion-card-header>
                 <ion-label>
-                  <ion-icon name="book-outline"></ion-icon>
-                  <h4 class="welcome">Free Wills</h4>
+                  <ion-icon name="book-outline" color="secondary" ></ion-icon>
+                  <h4 class="welcome" >Free Wills</h4>
                   
                 </ion-label> 
               </ion-card-header>
