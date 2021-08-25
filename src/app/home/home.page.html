@@ -1,107 +1,107 @@
 <ion-header class="ion-no-border">
-	<ion-toolbar color="primary">
-		<ion-buttons slot="start">
-			<ion-button>
-				<ion-icon color="light" name="apps"></ion-icon>
-			</ion-button>
-		</ion-buttons>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-button>
+                <ion-icon color="light" name="apps"></ion-icon>
+            </ion-button>
+        </ion-buttons>
 
         <ion-title >Legal Cover</ion-title>
 
 
-		<ion-buttons slot="end">
-			<ion-button  color="light">
-				<ion-icon  name="notifications"></ion-icon>
-			</ion-button>
-		</ion-buttons>
-	</ion-toolbar>
+        <ion-buttons slot="end">
+            <ion-button  color="light">
+                <ion-icon  name="notifications"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
 
-	
+
 
 </ion-header>
 
 <ion-content >
 
-  <div class="ion-no-margin-bottom">
-    <app-image-shell [mode]="'cover'" class="category-cover"
-     animation="spinner" [src]="'./assets/images/LegalCoverCard.png'" style="border-radius: 50px !important; ">
-      <app-aspect-ratio [ratio]="{w:1, h:1}">
-        <div style="margin-top:50px !important; margin-left: 10px;" class="ion-text-center">
-          <h2 class="category-title">Aaron Katema</h2>
-          <p class="category-title">1243848488</p>
-        </div>
-         
-        
-      </app-aspect-ratio>
-    </app-image-shell>
-   
-  
-  </div>
+    <div class="ion-no-margin-bottom">
+        <app-image-shell [mode]="'cover'" class="category-cover"
+                         animation="spinner" [src]="'./assets/images/LegalCoverCard.png'" style="border-radius: 50px !important; ">
+            <app-aspect-ratio [ratio]="{w:1, h:1}">
+                <div style="margin-top:50px !important; margin-left: 10px;" class="ion-text-center">
+                    <h2 class="category-title">Aaron Katema</h2>
+                    <p class="category-title">1243848488</p>
+                </div>
 
-  <div  >
-      <ion-grid>
-        <ion-row>
-          <ion-col>
-            <ion-card>
-              <ion-card-header>
-                <ion-label color="primary">
-            <p>Legal Problems?</p>
-                
 
-              <small>Find Suitable Help here</small>
-              <ion-icon color="primary" class="ion-margin-start" name="arrow-forward-circle-outline" slot="end"></ion-icon>
-                  </ion-label>
+            </app-aspect-ratio>
+        </app-image-shell>
 
-            </ion-card-header>
-            </ion-card>
 
-            <h4 class="title ion-no-margin ion-no-padding">Services</h4>
-          </ion-col>
+    </div>
+
+    <div  >
+        <ion-grid>
+            <ion-row>
+                <ion-col>
+                    <ion-card>
+                        <ion-card-header>
+                            <ion-label color="primary">
+                                <p>Legal Problems?</p>
+
+
+                                <small>Find Suitable Help here</small>
+                                <ion-icon color="primary" class="ion-margin-start" name="arrow-forward-circle-outline" slot="end"></ion-icon>
+                            </ion-label>
+
+                        </ion-card-header>
+                    </ion-card>
+
+                    <h4 class="title ion-no-margin ion-no-padding">Services</h4>
+                </ion-col>
+            </ion-row>
+
+        </ion-grid>
+        <ion-row class="">
+
+            <ion-col size="6" class="">
+                <ion-card>
+                    <div class="ion-text-center">
+                        <ion-icon class="ion-text-center"  size="large" color="primary" name="alarm-outline"></ion-icon>
+
+                        <ion-card-header>
+                            <ion-label color="primary">
+                                <h4 >24 Hr Legal Advice</h4>
+
+                            </ion-label>
+                        </ion-card-header>
+                    </div>
+                    <ion-card-content>
+
+                    </ion-card-content>
+                </ion-card>
+
+
+            </ion-col>
+
+
+
+            <ion-col size="6">
+                <ion-card>
+                    <div class="ion-text-center"> <ion-icon size="large" color="primary" name="book-outline"></ion-icon>
+                        <ion-card-header>
+                            <ion-label color="primary">
+
+                                <h4 class="welcome">Free Wills</h4>
+
+                            </ion-label>
+                        </ion-card-header>
+                    </div>
+                    <ion-card-content>
+
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
         </ion-row>
 
-      </ion-grid>
-    <ion-row class="">
-
-      <ion-col size="6" class="">
-        <ion-card>
-          <div class="ion-text-center">
-            <ion-icon class="ion-text-center"  size="large" color="primary" name="alarm-outline"></ion-icon>
-
-            <ion-card-header>
-              <ion-label color="primary">
-                <h4 >24 Hr Legal Advice</h4>
-
-              </ion-label>
-            </ion-card-header>
-          </div>
-          <ion-card-content>
-
-          </ion-card-content>
-        </ion-card>
-
-
-      </ion-col>
-
-
-
-      <ion-col size="6">
-        <ion-card>
-          <div class="ion-text-center"> <ion-icon size="large" color="primary" name="book-outline"></ion-icon>
-            <ion-card-header>
-              <ion-label color="primary">
-
-                <h4 class="welcome">Free Wills</h4>
-
-              </ion-label>
-            </ion-card-header>
-          </div>
-          <ion-card-content>
-
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-
-  </div>
+    </div>
 
 </ion-content>
