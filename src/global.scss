@@ -21,8 +21,16 @@
 @import "./theme/shell-defaults.scss";
 
 @font-face {
-    font-family: 'Proxima-Nova';
+    font-family: 'Poppins';
     font-style: normal;
     font-weight: normal;
-    src: url('./assets/fonts/proxima_nova_reg-webfont.ttf');
+    src: url('./assets/fonts/poppins/Poppins-Light.ttf');
   }
+
+
+@font-face {
+  font-family: 'Poppins-Italic';
+  font-style: italic;
+  font-weight: normal;
+  src: url('./assets/fonts/poppins/Poppins-LightItalic.ttf');
+}

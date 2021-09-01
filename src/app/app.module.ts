@@ -17,6 +17,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import {CallNumber} from '@ionic-native/call-number/ngx';
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -42,6 +43,7 @@ export function createTranslateLoader(http: HttpClient) {
     })
   ],
   providers: [
+      CallNumber,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

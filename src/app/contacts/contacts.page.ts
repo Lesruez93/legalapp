@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {CallNumber} from '@ionic-native/call-number/ngx';
 
 @Component({
   selector: 'app-contacts',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactsPage implements OnInit {
 
-  constructor() { }
+  constructor(private call: CallNumber){}
 
   ngOnInit() {
   }
 
+callNumber(number) {
+    this.call.callNumber("18001010101", false)
+        .then(res => console.log('Launched dialer!', res))
+        .catch(err => console.log('Error launching dialer', err));
+
+  }
 }

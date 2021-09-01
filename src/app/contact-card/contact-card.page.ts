@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
     './styles/contact-card.shell.scss'
   ]
 })
-export class ContactCardPage { }
+export class ContactCardPage {
+
+
+
+}
