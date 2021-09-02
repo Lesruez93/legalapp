@@ -9,74 +9,108 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content class="user-profile-content ion-no-margin">
+<ion-content >
+  <ion-toolbar>
+    <ion-item lines="none">
 
-  <div class="user-friends-section ion-no-margin">
-   
-    <ion-row class="friends-row ion-no-margin">
+    </ion-item>
+  </ion-toolbar>
+
+
+    <ion-row class="contacts-row ion-margin-top">
     
-      <ion-col class="friend-item" size="6">
+      <ion-col size="6">
 
-        <ion-card >
+        <ion-card class="contacts-card" >
+          <ion-item lines="none">
+            <ion-label> Police</ion-label>
 
-          <app-aspect-ratio [ratio]="{w: 1, h: 1}">
-            <app-image-shell class="user-image" animation="spinner" [src]="'./assets/sample-images/notifications/Police.jpg'"></app-image-shell>
-          </app-aspect-ratio>
-          
-          <!-- <ion-thumbnail style="margin:0 auto;  min-width: 5rem;    
-          min-height: 5rem;" class="ion-padding-top" >
-            <img src="./assets/sample-images/notifications/police.png" />
-          </ion-thumbnail> -->
+            <ion-icon name="call" color="primary" slot="end"></ion-icon>
+          </ion-item>
+
           <ion-card-content class="ion-text-center ion-no-margin-top ion-no-padding-top">
-            <h3 class="friend-name">Police</h3>
             <p class="sub-name">Law Enforcement</p>
-            <ion-button class="call-to-action-btn ion-text-center" size="small" color="primary">Call</ion-button>
 
           </ion-card-content>
         </ion-card>
        
       </ion-col>
-      <ion-col class="friend-item" size="6">
 
-        <ion-card>
-          <app-aspect-ratio [ratio]="{w: 1, h: 1}">
-            <app-image-shell class="user-image" animation="spinner" [src]="'./assets/sample-images/notifications/Medical.jpg'"></app-image-shell>
-          </app-aspect-ratio>
-          
-          <ion-card-content class="ion-text-center">
-            <h3 class="friend-name">EMS</h3>
-            <p class="sub-name ion-text-wrap">Emergence</p>
-            <ion-button class="call-to-action-btn ion-text-center" size="small" color="primary">Call</ion-button>
 
-          </ion-card-content>
-        </ion-card>
-       
-      </ion-col>
-    </ion-row>
-    <ion-row class="friends-row">
-    
-      <ion-col class="friend-item" size="6">
 
-        <ion-card>
-          <app-aspect-ratio [ratio]="{w: 1, h: 1}">
-            <app-image-shell class="user-image" animation="spinner" [src]="'./assets/sample-images/notifications/Fire.jpg'"></app-image-shell>
-          </app-aspect-ratio>
-          
-          <ion-card-content class="ion-text-center">
-            <h3 class="friend-name">Fire</h3>
+
+        <ion-col size="6">
+
+
+        <ion-card class="contacts-card" >
+          <ion-item lines="none">
+            <ion-label> EMS</ion-label>
+
+            <ion-icon name="call" color="primary" slot="end"></ion-icon>
+          </ion-item>
+
+          <ion-card-content class="ion-text-center ion-no-margin-top ion-no-padding-top">
             <p class="sub-name">Law Enforcement</p>
-            <ion-button class="call-to-action-btn ion-text-center" size="small" color="primary">Call</ion-button>
 
           </ion-card-content>
         </ion-card>
-       
       </ion-col>
-      <ion-col class="friend-item" size="6">
 
-      
-       
+
+
+
+      <ion-col size="6" class="ion-margin-top">
+
+
+        <ion-card class="contacts-card" >
+          <ion-item lines="none">
+            <ion-label> Police</ion-label>
+
+            <ion-icon name="call" color="primary" slot="end"></ion-icon>
+          </ion-item>
+
+          <ion-card-content class="ion-text-center ion-no-margin-top ion-no-padding-top">
+            <p class="sub-name">Law Enforcement</p>
+
+          </ion-card-content>
+        </ion-card>
       </ion-col>
+
+      <ion-col size="6" class="ion-margin-top">
+
+
+        <ion-card class="contacts-card" >
+          <ion-item lines="none">
+            <ion-label> Fire</ion-label>
+
+            <ion-icon (click)="callNumber('0772451668')" name="call" color="primary" slot="end"></ion-icon>
+          </ion-item>
+
+          <ion-card-content class="ion-text-center ion-no-margin-top ion-no-padding-top">
+            <p class="sub-name">Law Enforcement</p>
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6" class="ion-margin-top">
+
+
+        <ion-card class="contacts-card" >
+          <ion-item lines="none">
+            <ion-label> Police</ion-label>
+
+            <ion-icon name="call" color="primary" slot="end"></ion-icon>
+          </ion-item>
+
+          <ion-card-content class="ion-text-center ion-no-margin-top ion-no-padding-top">
+            <p class="sub-name">Law Enforcement</p>
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
     </ion-row>
-  </div>
+
 
 </ion-content>

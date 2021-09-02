@@ -2,28 +2,19 @@
   ion-content{
     --background: #F1F5F8
   }
-  .user-image{
-    border-radius: 14px;
-  }
-    .user-friends-section {
-        margin: calc(var(--page-margin) * 2) var(--page-margin) var(--page-margin);
-        padding-bottom: var(--page-margin);
-        border-bottom: 1px solid var(--ion-color-light-shade);
-    }
-    .friend-item {
-        padding: 0px var(--page-friends-gutter);
-  
-        .friend-name {
-          display: block;
-          text-align: center;
-          margin: var(--page-margin) 0px;
-          font-size: 14px;
-        }
 
-        .sub-name {
-            display: block;
-            text-align: center;
-            font-size: 12px;
-          }
-      }
+  .contacts-card{
+    margin: -2px;
+    border-radius: 10px;
+  }
+
+
+  .contacts-row{
+    padding: 10px;
+   // --ion-grid-columns: 10; // We want to show three users and a half. Each user fills 2 cols => (3.5 * 2 = 7 cols)
+ //   --ion-grid-column-padding: -1px;
+
+
+
+  }
 }
