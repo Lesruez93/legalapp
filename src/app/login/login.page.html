@@ -15,11 +15,11 @@
    style="margin: auto; display: block; margin-top:50% ;">
   <br>
   <form [formGroup]="loginForm" (ngSubmit)="doLogin()" >
-    <ion-list  class="inputs-list" lines="full">
+    <ion-list  class="inputs-list" lines="full" >
     
-      <ion-item>
+      <ion-item >
         <ion-label>Country</ion-label>
-        <ion-select placeholder="Select One">
+        <ion-select placeholder="Select One" >
           <ion-select-option  *ngFor="let item of countries" [value]="item" >{{item.dial_code}} {{item.name}}</ion-select-option>
          
         </ion-select>

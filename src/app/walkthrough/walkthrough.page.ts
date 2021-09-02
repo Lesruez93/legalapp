@@ -24,10 +24,12 @@ export class WalkthroughPage implements OnInit, AfterViewInit {
 
   @HostBinding('class.last-slide-active') isLastSlide = false;
 
-  constructor(public menu: MenuController) { }
+  constructor(
+    // public menu: MenuController
+    ) { }
 
   ngOnInit(): void {
-    this.menu.enable(false);
+    // this.menu.enable(false);
   }
 
   ngAfterViewInit(): void {
