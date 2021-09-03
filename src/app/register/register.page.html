@@ -3,31 +3,25 @@
     <ion-title class="ion-text-center">Legal Cover</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content class="forms-validations-content">
+<ion-content class="ion-margin" >
 
-  <div class="walkthrough-slides" >
-    <div class="first-slide illustration-and-decoration-slide">
-      <ion-row class="slide-inner-row">
+
+    <ion-grid class="ion-margin ion-padding">
+      <ion-row >
        
-        <ion-col class="decoration-col">
-          <!-- http://jxnblk.com/paths/?d=M0%200%20V5%20H5%20C25%205%2025%2020%2045%2020%20S65%205%2085%205%20H90%20V0%20Z -->
-          <!-- <svg class="vector-decoration" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="100px" width="100%" viewBox="0 0 90 20" style="enable-background:new 0 0 90 20;" xml:space="preserve" preserveAspectRatio="none">
-            <path d="M0 0 V5 H5 C25 5 25 20 45 20 S65 5 85 5 H90 V0 Z"/>
-          </svg> -->
-        </ion-col>
-        <ion-col class="info-col ion-text-center">
+        <ion-col class="ion-text-center" size="12">
           <div class="info-wrapper ion-text-center">
-            <h3 class="info-title">Law on the Go</h3>
+            <h1 class="">Law on the Go</h1>
             <p class="info-paragraph">
              Get Legal Power at your fingertips
             </p>
             <p class="info-paragraph ion-text-center">
-              <ion-button block [routerLink]="['/app/personal-details']">Register</ion-button>
+              <ion-button block [routerLink]="['/app/personal-details']" size="large" color="warning">Register</ion-button>
             </p>
           </div>
         </ion-col>
 
-        <ion-col class="illustration-col">
+        <ion-col size="12">
           
           <img class="illustration-image" style="margin-top: 20%;"
            animation="spinner" [src]="'./assets/images/logo.png'" [alt]="'walkthrough'">
@@ -35,8 +29,7 @@
       </ion-col>
 
       </ion-row>
-    </div>
-   
-  </div>
+    </ion-grid>
+
 
 </ion-content>

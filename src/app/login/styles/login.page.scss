@@ -7,6 +7,10 @@
     --background: url('../../../assets/images/bb.png') no-repeat center center / cover;
 
   }
+
+  .item.item-trns {
+    border-color:#fff;
+  }
 }
 
 // Note:  All the CSS variables defined below are overrides of Ionic elements CSS Custom Properties
@@ -27,7 +31,7 @@
   }
 
   .inputs-list {
-    // --ion-item-background: var(--page-background);
+    --ion-item-background: transparent;
 
     .input-item {
       --padding-start: 0px;
