@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Ionic4FullApp</string>
-    <string name="title_activity_main">Ionic4FullApp</string>
+    <string name="app_name">Legal Cover App</string>
+    <string name="title_activity_main">Legal Cover App</string>
     <string name="package_name">com.lester.app</string>
     <string name="custom_url_scheme">com.lester.app</string>
 </resources>
