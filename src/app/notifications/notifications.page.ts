@@ -11,6 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class NotificationsPage implements OnInit {
   notifications: any;
+  radar: any;
 
   constructor(private route: ActivatedRoute) { }
 
