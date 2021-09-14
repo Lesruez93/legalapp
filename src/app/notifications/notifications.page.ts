@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import {ToastController} from '@ionic/angular';
 
 @Component({
   selector: 'app-notifications',
@@ -13,20 +14,28 @@ export class NotificationsPage implements OnInit {
   notifications: any;
   radar: any;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute,
+              private toastCtrl:ToastController,
+              ) { }
 
   ngOnInit(): void {
-    if (this.route && this.route.data) {
-      this.route.data.subscribe(resolvedData => {
-        const dataSource = resolvedData['data'];
-        if (dataSource) {
-          dataSource.source.subscribe(pageData => {
-            if (pageData) {
-              this.notifications = pageData;
-            }
-          });
-        }
-      });
-    }
+
+  }
+
+
+  shareLocation(){
+    this.radar = !this.radar
+    this.showToast()
+  }
+
+  async  showToast(){
+   const toast = await this.toastCtrl.create({
+      message:"Live location sharing started....",
+      position:'bottom',
+      duration:20000,
+     color:"success"
+    })
+
+    await toast.present()
   }
 }

@@ -8,25 +8,25 @@
 </ion-header>
 
 <ion-content class="notifications-content ion-margin-top">
-    <p class="ion-margin ion-text-center">In case of legal emergency , tap find me button to share your details and
-     location with Legal Cover. An agent will be notified of your emergency 
+    <ion-card>
+    <h6 class="ion-margin ion-text-center">In case of legal emergency , tap find me button to share your details and
+     location with Legal Cover. An agent will be notified of your emergency
      and get in touch as soon as possible
-    </p>
-    <div style="position: relative;" class="ion-text-center">
-      <ion-button  (click)="radar = !radar" *ngIf="!radar" shape="" fill="outline" size="large"
-                  style="position: absolute;
-      z-index: 99; margin: 35% auto auto 27%;" class="ion-text-center" color="warning" >
-        Find Me</ion-button>
-      <img  *ngIf="!radar" [src]="'./assets/images/red-circle.png'" alt="" style="position: relative;  width: 300px; top:40px;">
-        <img *ngIf="radar" [src]="'./assets/images/gi.gif'" alt="" style="position: relative;  height: 250px; top:40px;">
+    </h6>
+    </ion-card>
+  <div  class="ion-text-center" style="margin-top: 100px; ">
+    <ion-button  (click)="shareLocation()" *ngIf="!radar"  fill="outline" size="large"
+                 class="ion-text-center" color="warning" >
+      <ion-icon name="pin" color="light" size="large"></ion-icon>
+      Find Me</ion-button>
+    <img *ngIf="radar" [src]="'./assets/images/gi.gif'" alt="" style="height: 250px; top:40px;">
 
 
 
-    </div>
-  
 
-    
-   
+  </div>
+
+
 
 
 </ion-content>

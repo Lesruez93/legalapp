@@ -1,8 +1,13 @@
-<!-- <ion-header>
+<ion-header>
   <ion-toolbar color="primary">
     <ion-title class="ion-text-center">Legal Cover</ion-title>
+
+  <ion-buttons slot="start">
+    <ion-back-button></ion-back-button>
+
+  </ion-buttons>
   </ion-toolbar>
-</ion-header> -->
+</ion-header>
 
 <ion-content class="ion-margin">
 
@@ -16,7 +21,7 @@
     
           <ion-item class="input-item">
             <ion-label position="floating">ID Type</ion-label>
-            <ion-input type="text" formControlName="idtype" clearInput required></ion-input>
+            <ion-input type="text"  clearInput required></ion-input>
           </ion-item>
           <!-- <div class="error-container">
             <ng-container *ngFor="let validation of validations.idtype">
@@ -29,7 +34,7 @@
     
           <ion-item class="input-item">
             <ion-label position="floating">First Name</ion-label>
-            <ion-input type="text" formControlName="name" clearInput></ion-input>
+            <ion-input type="text"  clearInput></ion-input>
           </ion-item>
           <!-- <div class="error-container">
             <ng-container *ngFor="let validation of validations.name">
@@ -42,7 +47,7 @@
     
           <ion-item class="input-item">
             <ion-label position="floating">Last Name</ion-label>
-            <ion-input type="text" formControlName="lastname" clearInput></ion-input>
+            <ion-input type="text"  clearInput></ion-input>
           </ion-item>
           <!-- <div class="error-container">
             <ng-container *ngFor="let validation of validations.lastname">
@@ -55,7 +60,7 @@
     
           <ion-item class="input-item">
             <ion-label position="floating">Gender</ion-label>
-            <ion-select formControlName="gender" cancelText="Cancel" okText="OK">
+            <ion-select  cancelText="Cancel" okText="OK">
               <ion-select-option *ngFor="let gender of genders" [value]="gender" >{{ gender }}</ion-select-option>
             </ion-select>
           </ion-item>
@@ -72,13 +77,13 @@
           <div formGroupName="country_phone">
             <ion-item class="input-item">
               <ion-label position="floating">Country</ion-label>
-              <ion-select formControlName="country" cancelText="Cancel" okText="OK">
+              <ion-select  cancelText="Cancel" okText="OK">
                 <ion-select-option *ngFor="let item of countries" [value]="item" >{{item.name}}</ion-select-option>
               </ion-select>
             </ion-item>
             <ion-item class="input-item">
               <ion-label position="floating">Phone</ion-label>
-              <ion-input clearInput placeholder="{{ validationsForm.value.country_phone.country.sample_phone }}" type="text" formControlName="phone"></ion-input>
+              <ion-input clearInput placeholder="South Africa" type="text" ></ion-input>
             </ion-item>
             <!-- <div class="error-container">
               <ng-container *ngFor="let validation of validations.phone">
@@ -92,7 +97,7 @@
         </ion-list>
         <ion-item class="input-item">
           <ion-label position="floating">Email</ion-label>
-          <ion-input type="text" formControlName="email" clearInput inputmode="email"></ion-input>
+          <ion-input type="text"  clearInput inputmode="email"></ion-input>
         </ion-item>
         <!-- <div class="error-container">
           <ng-container *ngFor="let validation of validations.email">
@@ -110,7 +115,7 @@
     
           <ion-item class="input-item terms-item">
             <ion-label>I accept terms and conditions</ion-label>
-            <ion-checkbox formControlName="terms"></ion-checkbox>
+            <ion-checkbox ></ion-checkbox>
           </ion-item>
 
 <!-- 
@@ -123,14 +128,17 @@
             </ng-container>
           </div> -->
         </ion-list>
-        <ion-button class="submit-btn" type=""  fill="outline" [routerLink]="['/app/register']"> Prev</ion-button>
 
-        <ion-button class="submit-btn"
-         expand="" fill="outline"  [routerLink]="['/app/address-details']"  >Next</ion-button>
+
       </form>
   
   
   </div>
- 
+  <div class="ion-text-center">
+  <ion-button class="submit-btn" size="small" type=""  fill="outline" > Prev</ion-button>
+
+  <ion-button class="submit-btn" size="small"
+              expand="" fill="outline"  [routerLink]="['/address-details']"  >Next</ion-button>
+  </div>
 
 </ion-content>

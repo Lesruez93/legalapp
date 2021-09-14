@@ -11,6 +11,9 @@
   --page-friends-gutter: calc(var(--page-margin) / 2);
   --page-pictures-gutter: calc(var(--page-margin) / 2);
 }
+ion-content{
+  --background: #F1F5F8
+}
 
 // Note:  All the CSS variables defined below are overrides of Ionic elements CSS Custom Properties
 .user-details-section {

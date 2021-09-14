@@ -1,28 +1,69 @@
+<!-- <ion-tabs>-->
+<!--  <ion-tab-bar slot="bottom">-->
+<!--    <ion-tab-button tab="home">-->
+<!--      <ion-icon  src="./assets/sample-icons/tabs/home.svg" color="primary"></ion-icon>-->
+<!--      <ion-label class="tab-title">Home</ion-label>-->
+<!--    </ion-tab-button>-->
+
+<!--    <ion-tab-button tab="contacts">-->
+<!--      <ion-icon src="./assets/sample-icons/tabs/contacts.svg" color="primary"></ion-icon>-->
+<!--      <ion-label class="tab-title">Contacts</ion-label>-->
+<!--    </ion-tab-button>-->
+
+<!--    <ion-tab-button tab="register">-->
+<!--      <ion-icon src="./assets/sample-icons/tabs/law.svg" color="primary"></ion-icon>-->
+<!--      <ion-label class="tab-title">Legal Cover</ion-label>-->
+<!--    </ion-tab-button>-->
+<!--  -->
+<!--    <ion-tab-button tab="notifications">-->
+<!--      <ion-icon src="./assets/sample-icons/tabs/help.svg" color="primary"></ion-icon>-->
+<!--      <ion-label class="tab-title">Help</ion-label>-->
+<!--    </ion-tab-button>-->
+
+<!--    <ion-tab-button tab="user">-->
+<!--      <ion-icon src="./assets/sample-icons/tabs/profile.svg" color="primary"></ion-icon>-->
+<!--      <ion-label class="tab-title">Profile</ion-label>-->
+<!--    </ion-tab-button>-->
+<!--  </ion-tab-bar>-->
+<!--</ion-tabs>-->
+
+
+
+
  <ion-tabs>
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="home">
-      <ion-icon size="small" src="./assets/sample-icons/tabs/home.svg" color="primary"></ion-icon>
-      <ion-label class="tab-title">Home</ion-label>
-    </ion-tab-button>
 
-    <ion-tab-button tab="contacts">
-      <ion-icon src="./assets/sample-icons/tabs/contacts.svg" color="primary"></ion-icon>
-      <ion-label class="tab-title">Contacts</ion-label>
-    </ion-tab-button>
+   <ion-fab vertical="bottom"  horizontal="center" translucent="true">
+     <ion-fab-button routerLink="/app/notifications"  color="light" >
+       <ion-icon color="primary" src="./assets/sample-icons/tabs/help.svg"></ion-icon>
 
-    <ion-tab-button tab="register">
-      <ion-icon src="./assets/sample-icons/tabs/law.svg" color="primary"></ion-icon>
-      <ion-label class="tab-title">Legal Cover</ion-label>
-    </ion-tab-button>
-  
-    <ion-tab-button tab="notifications">
-      <ion-icon src="./assets/sample-icons/tabs/help.svg" color="primary"></ion-icon>
-      <ion-label class="tab-title">Help</ion-label>
-    </ion-tab-button>
+     </ion-fab-button>
+   </ion-fab>
 
-    <ion-tab-button tab="user">
-      <ion-icon src="./assets/sample-icons/tabs/profile.svg" color="primary"></ion-icon>
-      <ion-label class="tab-title">Profile</ion-label>
-    </ion-tab-button>
-  </ion-tab-bar>
-</ion-tabs>
+   <ion-tab-bar slot="bottom" class="ion-no-border">
+     <ion-tab-button tab="home">
+       <ion-icon name="home-outline"></ion-icon>
+       <ion-label class="tab-title">Home</ion-label>
+
+     </ion-tab-button>
+
+     <ion-tab-button tab="contacts" class="comments">
+       <ion-icon name="call-outline"></ion-icon>
+       <ion-label class="tab-title">Home</ion-label>
+
+     </ion-tab-button>
+
+     <svg height="50" viewBox="0 0 100 50" width="100" xmlns="http://www.w3.org/2000/svg"><path d="M100 0v50H0V0c.543 27.153 22.72 49 50 49S99.457 27.153 99.99 0h.01z" fill="red" fill-rule="evenodd"></path></svg>
+
+     <ion-tab-button tab="notifications" class="notifs">
+       <ion-icon name="notifications-outline"></ion-icon>
+       <ion-label class="tab-title">Notifications</ion-label>
+
+     </ion-tab-button>
+
+     <ion-tab-button tab="user">
+       <ion-icon name="person-outline"></ion-icon>
+       <ion-label class="tab-title">Profile</ion-label>
+
+     </ion-tab-button>
+   </ion-tab-bar>
+ </ion-tabs>

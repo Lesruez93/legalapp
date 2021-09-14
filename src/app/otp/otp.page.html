@@ -6,11 +6,11 @@
     <ion-title>Enter Verification Code</ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content class="ion-padding ion-margin" >
-  
-  <ion-grid>
+<ion-content  >
+  <ion-card class="ion-padding">
+  <ion-grid >
     <ion-row class="ion-text-center">
-      <img src="./assets/images/otp.png" class="ion-text-center" height="100px" style="margin: auto;">
+      <img src="./assets/images/logo.png" class="ion-text-center" height="100px" style="margin: auto;">
 
       <p class="ion-text-center">We have sent OTP on your number</p>
 
@@ -34,17 +34,36 @@
           </ion-input>
         </div>
       </ion-col>
-    
+
       <ion-col>
 
         <div>
-          <ion-input name="d" #d (keyup)="moveFocus($event,'',c)" type="tel" placeholder="0" maxlength="1">
+          <ion-input name="d" #d (keyup)="moveFocus($event,e,c)" type="tel" placeholder="0" maxlength="1">
+          </ion-input>
+        </div>
+      </ion-col>
+
+      <ion-col>
+
+        <div>
+          <ion-input name="e" #e (keyup)="moveFocus($event,f,d)" type="tel" placeholder="0" maxlength="1">
+          </ion-input>
+        </div>
+      </ion-col>
+
+      <ion-col>
+
+        <div>
+          <ion-input name="f" #f (keyup)="moveFocus($event,'',e)" type="tel" placeholder="0" maxlength="1">
           </ion-input>
         </div>
       </ion-col>
     </ion-row>
-    <ion-row>
-      <p  class="ion-text-center">Didn't receive OTP?<a href="">Resend OTP</a></p>
-    </ion-row>
+    <div class="ion-margin-top">
+      <p  class="ion-text-center" >Didn't receive OTP? &nbsp; &nbsp;  <a href="">   Resend OTP</a></p>
+    </div>
   </ion-grid>
+
+  <ion-button class="ion-margin-top" routerLink="/app/home" expand="block" >Submit</ion-button>
+  </ion-card>
 </ion-content>

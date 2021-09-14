@@ -19,6 +19,14 @@ const routes: Routes = [
   { path: 'firebase', loadChildren: () => import('./firebase/firebase-integration.module').then(m => m.FirebaseIntegrationModule) },
   { path: 'maps', loadChildren: () => import('./maps/maps.module').then(m => m.MapsPageModule) },
   {
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then(m => m.RegisterPageModule)
+  },
+  {
+    path: 'personal-details',
+    loadChildren: () => import('./personal-details/personal-details.module').then( m => m.PersonalDetailsPageModule)
+  },
+  {
     path: 'auth/otp',
     loadChildren: () => import('./otp/otp.module').then( m => m.OtpPageModule)
   },
