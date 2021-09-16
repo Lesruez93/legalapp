@@ -33,7 +33,40 @@
  <ion-tabs>
 
 
-     <ion-fab vertical="bottom"  horizontal="center" slot="fixed">
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button  color="light">
+      SOS
+</ion-fab-button>
+
+    <ion-fab-list side="top" style="margin-bottom: 150px !important;">
+      <ion-fab-button size="large">
+        Fire
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom" style="top: -100px !important; right: -100px;">
+      <ion-fab-button>
+        EMS
+      </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="bottom" style="top: -100px !important; left: -100px;">
+      <ion-fab-button>
+        Find Me
+      </ion-fab-button>
+    </ion-fab-list>
+
+    <ion-fab-list side="start" style="top: -100px !important;">
+      <ion-fab-button>
+        Legal
+    </ion-fab-button>
+    </ion-fab-list>
+    <ion-fab-list side="end" style="top: -100px !important;">
+      <ion-fab-button>
+        Crime
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+     <!-- <ion-fab vertical="bottom"  horizontal="center" slot="fixed">
        <ion-fab-button  color="light">
                SOS
        </ion-fab-button>
@@ -46,7 +79,7 @@
          <ion-fab-button >Find me</ion-fab-button>
 
        </ion-fab-list>
-     </ion-fab>
+     </ion-fab> -->
 
    <ion-tab-bar slot="bottom" class="ion-no-border">
      <ion-tab-button tab="home">
@@ -57,7 +90,7 @@
 
      <ion-tab-button tab="contacts" class="comments">
        <ion-icon name="call-outline"></ion-icon>
-       <ion-label class="tab-title">Home</ion-label>
+       <ion-label class="tab-title">Products</ion-label>
 
      </ion-tab-button>
 
