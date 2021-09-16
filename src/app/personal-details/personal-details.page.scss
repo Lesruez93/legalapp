@@ -1,0 +1,15 @@
+:host{
+    ion-content{
+        --background: #fa0808;
+    }
+
+    .inputs-list {
+        --ion-item-background: transparent;
+    
+        .input-item {
+          --padding-start: 0px;
+          --padding-end: 0px;
+          --inner-padding-end: 0px;
+        }
+    }    
+}
