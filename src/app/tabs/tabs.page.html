@@ -32,12 +32,21 @@
 
  <ion-tabs>
 
-   <ion-fab vertical="bottom"  horizontal="center" translucent="true">
-     <ion-fab-button routerLink="/app/notifications"  color="light" >
-       <ion-icon color="primary" src="./assets/sample-icons/tabs/help.svg"></ion-icon>
 
-     </ion-fab-button>
-   </ion-fab>
+     <ion-fab vertical="bottom"  horizontal="center" slot="fixed">
+       <ion-fab-button  color="light">
+               SOS
+       </ion-fab-button>
+       <ion-fab-list side="top" >
+         <ion-fab-button >
+           Fire</ion-fab-button>
+         <ion-fab-button>EMS</ion-fab-button>
+         <ion-fab-button>Legal</ion-fab-button>
+         <ion-fab-button>Crime</ion-fab-button>
+         <ion-fab-button >Find me</ion-fab-button>
+
+       </ion-fab-list>
+     </ion-fab>
 
    <ion-tab-bar slot="bottom" class="ion-no-border">
      <ion-tab-button tab="home">
