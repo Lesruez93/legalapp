@@ -23,14 +23,7 @@
             <ion-label position="floating">ID Type</ion-label>
             <ion-input type="text"  clearInput required></ion-input>
           </ion-item>
-          <div class="error-container">
-            <ng-container *ngFor="let validation of validations.idtype">
-              <div class="error-message" *ngIf="validationsForm.get('idtype').hasError(validation.type) && (validationsForm.get('idtype').dirty || validationsForm.get('idtype').touched)">
-                <ion-icon name="information-circle-outline"></ion-icon>
-                <span>{{ validation.message }}</span>
-              </div>
-            </ng-container>
-          </div>
+
     
           <ion-item class="input-item">
             <ion-label position="floating">First Name</ion-label>
@@ -95,10 +88,12 @@
             </div> -->
           </div>
         </ion-list>
+        <ion-list class="inputs-list" lines="full">
         <ion-item class="input-item">
           <ion-label position="floating">Email</ion-label>
           <ion-input type="text"  clearInput inputmode="email"></ion-input>
         </ion-item>
+      </ion-list>
         <!-- <div class="error-container">
           <ng-container *ngFor="let validation of validations.email">
             <div class="error-message" *ngIf="validationsForm.get('email').hasError(validation.type) && (validationsForm.get('email').dirty || validationsForm.get('email').touched)">
