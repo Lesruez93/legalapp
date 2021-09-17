@@ -12,7 +12,10 @@
   --page-pictures-gutter: calc(var(--page-margin) / 2);
 }
 ion-content{
-  --background: #F1F5F8
+  --background: #f00a0a;
+  ion-col{
+color: #ffffff;
+  }
 }
 
 // Note:  All the CSS variables defined below are overrides of Ionic elements CSS Custom Properties
