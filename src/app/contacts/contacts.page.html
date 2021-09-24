@@ -1,23 +1,37 @@
 <ion-header no-border>
   <ion-toolbar color="primary">
-    <!-- <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons> -->
-    <ion-title class="ion-text-center">
-      Emergence Contacts
-    </ion-title>
+    <ion-segment value="all" 
+    color="tertiary" 
+    scrollable="true"
+    mode="ios"
+    [(ngModel)]="segmentModel" 
+    (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="legalcover">
+        <ion-label>Legal cover</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="medic">
+        <ion-label>Medic Now</ion-label>
+      </ion-segment-button>
+    </ion-segment>
   </ion-toolbar>
 </ion-header>
 
 <ion-content >
 
-<!-- 
-<ion-card class="ion-padding">
-  <ion-text>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-  </ion-text>
-</ion-card> -->
-    <ion-row class="contacts-row ion-margin-top" style="margin-top: 50px">
+  <ion-card *ngIf="segmentModel === 'legalcover'">
+    <ion-card-header>
+      <ion-card-subtitle>Segment Content</ion-card-subtitle>
+      <ion-card-title>All</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+  </ion-card>
+
+
+    <ion-row class="contacts-row ion-margin-top" style="margin-top: 50px"  *ngIf="segmentModel === 'medic'">
     
       <ion-col size="6">
 
