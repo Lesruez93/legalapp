@@ -4,13 +4,26 @@
   --page-margin: var(--app-broad-margin);
   // --page-background: var(--app-background-shade);
   ion-content{
-    --background: #fa0808;
+    --background: #D92026;
 
   }
 
   .item.item-trns {
     border-color:#fff;
   }
+
+  
+element.style {
+}
+
+.select-text {
+    flex: 1 1 0%;
+    min-width: 100%;
+    font-size: inherit;
+    text-overflow: ellipsis;
+    white-space: unset; 
+    overflow: hidden;
+}
 }
 
 // Note:  All the CSS variables defined below are overrides of Ionic elements CSS Custom Properties
